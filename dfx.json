@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "deva_backend": {
+      "main": "src/deva_backend/main.mo",
+      "type": "motoko"
+    },
+    "deva_frontend": {
+      "dependencies": [
+        "deva_backend"
+      ],
+      "source": [
+        "src/deva_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "deva_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
